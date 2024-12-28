@@ -40,25 +40,33 @@ git clone https://github.com/hajimesoneda/bit_project_summarizer.git
 cd bit_project_summarizer
 ```
 
-2. 必要なPythonパッケージをインストール
+2. Python仮想環境の設定（推奨）
+```bash
+python -m venv myenv
+source myenv/bin/activate
+```
+もし、Python仮想環境をこのプロジェクト内に作った場合は、.gitignoreでディレクトリを除外してください。
+(myenvで作った場合は、myenvディレクトリを除外)
+
+3. 必要なPythonパッケージをインストール
 ```bash
 pip install -r requirements.txt
 ```
 
-3. 環境変数の設定
+4. 環境変数の設定
    - `.env.example`を`.env`にコピー
    - 各項目に適切な値を設定
 ```bash
 cp .env.example .env
 ```
 
-4. Google Cloud Platformの設定
+5. Google Cloud Platformの設定
    - [Google Cloud Console](https://console.cloud.google.com/)で新しいプロジェクトを作成
    - Google Drive APIとGoogle Sheets APIを有効化
    - サービスアカウントを作成し、認証情報をダウンロード
    - ダウンロードした認証情報を`credentials/credentials.json`として保存
 
-5. 実行
+6. 実行
 ```bash
 python main.py
 ```
