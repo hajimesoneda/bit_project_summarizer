@@ -13,7 +13,7 @@
    - スプレッドシートID
    - その他の環境設定
 
-2. `credentials.json`
+2. `credentials/credentials.json`
    - Google Cloud Platformの認証情報
    - サービスアカウントの秘密鍵
 
@@ -56,7 +56,7 @@ cp .env.example .env
    - [Google Cloud Console](https://console.cloud.google.com/)で新しいプロジェクトを作成
    - Google Drive APIとGoogle Sheets APIを有効化
    - サービスアカウントを作成し、認証情報をダウンロード
-   - ダウンロードした認証情報を`credentials.json`としてプロジェクトルートに保存
+   - ダウンロードした認証情報を`credentials/credentials.json`として保存
 
 5. 実行
 ```bash
