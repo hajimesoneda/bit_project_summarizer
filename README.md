@@ -36,8 +36,8 @@
 
 1. リポジトリのクローン
 ```bash
-git clone [repository-url]
-cd [repository-name]
+git clone https://github.com/hajimesoneda/bit_project_summarizer.git
+cd bit_project_summarizer
 ```
 
 2. 必要なPythonパッケージをインストール
